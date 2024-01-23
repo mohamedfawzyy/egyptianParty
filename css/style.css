@@ -1,0 +1,125 @@
+/* aside bar */
+:root{
+    scroll-behavior: auto;
+}
+body{
+  
+}
+aside{
+    
+    /* display: none; */
+   
+    position: fixed;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left:-200px;
+    right: 0;
+    background-color: black;
+    z-index: 999;
+}
+
+aside ul{
+    padding:10px;
+   
+}
+aside ul li{
+    padding: 10px 20px;
+    
+}
+aside ul>i{
+    color: white;
+    position: absolute;
+    right: 0;
+    padding-inline: 10px;
+    cursor:pointer;
+    transition: all 0.5s;
+}
+ul i:hover{
+    color: red;
+}
+aside a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: all 0.5s;
+}
+
+aside a:hover{
+    color: red;
+}
+
+/* header */
+header{
+    height: 650px;
+    background:linear-gradient(to right ,rgba(255,0,0,0.5),rgba(255,0,0,0.5) ) , url("../images/events-heavenly-header.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#openSide{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+ 
+}
+/* details */
+#details{
+    margin-top: 40px;
+}
+.singer{
+    background-color: hsl(0, 100%, 80%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#details p{
+    background-color: #ccc;
+    padding: 5px;
+} 
+#details p:not(:first-of-type){
+    display: none;
+}
+/* duration */
+#duration{
+    background:linear-gradient(to right,rgba(255,0,0,0.5),rgba(255,0,0,0.5)) , url("../images/invitation-2508607__340.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    color: white;
+
+}
+#duration .col-md-3>div{
+    border: 2px solid white;
+}
+/* contact */
+.socials div{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+   
+}
+.socials div:hover{
+    background-color:#D62E33 ;
+}
+.socials div:hover i{
+    color:white ;
+}
+/* form */
+label span{
+    color: #D62E33;
+}
